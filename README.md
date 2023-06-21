@@ -25,3 +25,6 @@
     >
       {props.children}
     </div>
+
+# O que é e para que serve o “state”
+- Serve para realizar as mudanças das variáveis e etc no DOM virtual

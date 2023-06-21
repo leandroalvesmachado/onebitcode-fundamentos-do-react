@@ -2,15 +2,23 @@ import LinkButton from "../LinkButton"
 import Title from "../Title"
 import ProfileSection from "./ProfileSection"
 import styles from "./styles.module.css"
+import { useState } from "react";
 
 // Se a função não depende de nenhuma props, fica aqui fora
-// Se a função depender de alguma props, fica dentro do componente. Ex: export default function Profile(props) {
 function handleClick(ev) {
   console.log(ev)
-  alert('Você agora está seguindo')
 }
 
 export default function Profile(props) {
+  // [variavel, funcaoModificadora] = useState(valor da variavel)
+  const [followText, setFollowText] = useState("Follow")
+
+  // Se a função depender de alguma props ou variavel, fica dentro do. Ex: export default function Profile(props) {
+  function changeText(ev) {
+    alert('Você agora está seguindo')
+    setFollowText("Following")
+  }
+
   return (
     <div className={styles.container}>
       <img className={styles.avatar} src={props.avatar} alt={props.name} />
@@ -21,9 +29,9 @@ export default function Profile(props) {
           {/* <button onClick={() => alert('Você agora esta seguindo')}>Follow</button> */}
           <button
             className={styles.followButton}
-            onClick={handleClick}
+            onClick={changeText}
           >
-            Follow
+            {followText}
           </button>
         </p>
       </Title>
