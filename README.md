@@ -1,5 +1,6 @@
 # onebitcode-fundamentos-do-react
 
+- React.StrictMode - ajuda no desenvolvimento, ele monta o componente duas vezes para facilitar o debug
 
 # Composição de componentes com “children”
 
@@ -28,3 +29,11 @@
 
 # O que é e para que serve o “state”
 - Serve para realizar as mudanças das variáveis e etc no DOM virtual
+
+# Conhecendo melhor os hooks (ganchos)
+- Ex: useState
+- Os hooks começam com useNomeDoHook
+- Regra 1: Onde usar os hooks
+- Só funciona dentro do componente. Ex: Dentro do function App()
+- Regra 2: A ordem dos hooks
+

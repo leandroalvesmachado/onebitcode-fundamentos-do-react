@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  // React.StrictMode - ajuda no desenvolvimento, ele monta o componente duas vezes para facilitar o debug
   <React.StrictMode>
     <App />
   </React.StrictMode>,
