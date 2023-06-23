@@ -37,3 +37,5 @@
 - Só funciona dentro do componente. Ex: Dentro do function App()
 - Regra 2: A ordem dos hooks
 
+# Compartilhando estado entre componentes
+- npm install prop-types (biblioteca compartilhando estado entre componentes)
