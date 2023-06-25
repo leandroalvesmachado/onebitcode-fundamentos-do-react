@@ -13,14 +13,20 @@ function App() {
         addGame={addGame}
       />
       <div className="games">
-        {games.map((game) => (
+        {games.length > 0 ? 
+          games.map((game) => (
           <Game
             key={game.id}
             title={game.title}
             cover={game.cover}
             onRemove={() => removeGame(game.id)}
           />
-        ))}
+          ))
+          :
+          (
+            <h2>Nenhum game cadastrado</h2>
+          )
+        }
       </div>
     </div>
   )
