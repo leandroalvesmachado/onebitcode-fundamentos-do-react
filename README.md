@@ -1,5 +1,24 @@
 # onebitcode-fundamentos-do-react
 
+# Introdução ao Módulo
+<ol>
+  <li>Como funciona o React</li>
+  <li>Para que serve o React</li>
+  <li>JSX</li>
+  <li>Componentes</li>
+  <li>props</li>
+  <li>eventos</li>
+  <li>estado</li>
+  <li>formulários</li>
+  <li>renderização condicional e de listas</li>
+  <li>HTML e CSS</li>
+  <li>Conhecimentos sólidos em JavaScript (todos os 5 módulos de JS concluídos)</li>
+  <li>Em especial, domínio de funções, objetos e arrays</li>
+  <li>Versão usada: React 18+</li>
+  <li>Nova estrutura em (possivelmente) 3 partes</li>
+  <li>Parte inicial: foco nos fundamentos</li>
+</ol>
+
 - React.StrictMode - ajuda no desenvolvimento, ele monta o componente duas vezes para facilitar o debug
 
 # Composição de componentes com “children”
